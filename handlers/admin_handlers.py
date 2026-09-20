@@ -13,7 +13,7 @@ async def start(message: Message):
 
 @router.callback_query(F.data == "back_to_start")
 async def back_to_start(callback: CallbackQuery):
-    await callback.message.edit_text("🤖 В этом боте вы можете создавать конкурсы", reply_markup=kb.back_to_start_keyboard())
+    await callback.message.edit_text("🤖 В этом боте вы можете создавать конкурсы", reply_markup=kb.admin_start_keyboard())
 
 
 
