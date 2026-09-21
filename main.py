@@ -19,6 +19,7 @@ async def main():
     # 1. Сначала запускаем базу данных и обновляем ссылки в клавиатурах
 
     # 2. Инициализируем бота
+    await models.init_db()
     bot = Bot(token=BOT_TOKEN)
     dispatcher = Dispatcher()
     dispatcher.include_router(admin_router)
